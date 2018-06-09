@@ -1,0 +1,13 @@
+<div>
+	<div>
+        <p>User ID : {{postDetails.userId}}</p>
+        <p>Title : {{postDetails.title}}</p>
+        <p>Body : {{postDetails.body}}</p>
+    </div>
+    <h3>Comments</h3>
+    <div *ngFor="let comment of postComments">
+        <p>Name : {{comment.name}}</p>
+        <p>Email : {{comment.email}}</p>
+        <p>Body : {{comment.body}}</p>
+    </div>
+</div>
