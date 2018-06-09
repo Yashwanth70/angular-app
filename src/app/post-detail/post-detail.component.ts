@@ -11,7 +11,7 @@ import { Location } from '@angular/common'
 })
 export class PostDetailComponent implements OnInit {
   postDetails : any ;
-  postComments : [];
+  postComments = [];
   constructor(private postsService: PostsFetchService,private route: ActivatedRoute,private location: Location) { }
 
   ngOnInit() {
